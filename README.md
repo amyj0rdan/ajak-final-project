@@ -4,7 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
-This is our final project at Makers Academy, to be presented 24/5/19.
+This is our final project at Makers Academy, presented at Demo Day on Friday 24 May 2019.
 
 Visit our web app, [Ajak Doodler](https://ajak-doodler.herokuapp.com/)!
 
@@ -13,7 +13,7 @@ Visit our web app, [Ajak Doodler](https://ajak-doodler.herokuapp.com/)!
 ## Getting started
 
 ```bash
-git clone https://github.com/jpalmerr/ajak-final-project
+git clone https://github.com/amyj0rdan/ajak-final-project
 pip3 install -r requirements.txt # to install python dependencies
 npm install # to install node dependencies
 ```
@@ -83,9 +83,11 @@ and our AI machine will return a prediction of the drawing.
 
 ## Manifesto
 
-Our project [manifesto](https://github.com/jpalmerr/ajak-final-project/blob/master/manifesto.md).
+Our project [manifesto](https://github.com/amyj0rdan/ajak-final-project/blob/master/manifesto.md).
 
 Our [Trello board](https://trello.com/b/SAOvMM1v/ajak).
+
+Our [presentation](https://docs.google.com/presentation/d/1GTJL6hVxDfipjO8MemxPloK68e03wOtJmxCWNDJeYpY/edit?usp=sharing) from Demo Day at Makers Academy on Friday 24 May 2019.
 
 ## Learning documentation
 
