@@ -4,11 +4,11 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
-This is our final project at Makers Academy, presented at Demo Day on Friday 24 May 2019.
+This is [our](#authors) final project at Makers Academy, presented at Demo Day on Friday 24 May 2019.
 
-Visit our web app, [Ajak Doodler](https://ajak-doodler.herokuapp.com/)!
+Visit our web app [on Heroku](https://ajak-doodler.herokuapp.com/)!
 
-[Getting started](#getting-started) | [Project aims](#project-aims) | [Technologies](#technologies) | [Manifesto](#manifesto) |  [Learning documentation](#learning-documentation) | [Authors](#authors) | [Acknowledgements](#acknowledgements)
+[Getting started](#getting-started) | [Project description](#project-description) | [Technologies](#technologies) | [Manifesto](#manifesto) |  [Learning documentation](#learning-documentation) | [Authors](#authors) | [Acknowledgements](#acknowledgements)
 
 ## Getting started
 
@@ -18,11 +18,11 @@ pip3 install -r requirements.txt # to install python dependencies
 npm install # to install node dependencies
 ```
 
-### To download data
+#### To download data
 
-Download `Crown`, `Camera` and `Rabbit` from [Google QuickDraw Dataset](https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap) and save to `/data` folder in the project under `crowns.npy`, `cameras.npy` and `rabbits.npy`.
+Download `Crown`, `Camera` and `Rabbit` from [Google QuickDraw Dataset](https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap) in numpy-bitmap format and save to `/data` folder in the project under `crowns.npy`, `cameras.npy` and `rabbits.npy`.
 
-### To train model
+#### To train model
 
 ```bash
 python3 model_config/train.py
@@ -31,59 +31,75 @@ python3 model_config/train.py
 When prompted by running the above command, save the model as `cameras_rabbits_crowns_model`.
 Move the saved model to the `/models` folder.
 
-### To see model predict random image from test data
+#### To see model predict random image from test data
 
 ```bash
 python3 model_config/predict_on_command_line.py
 ```
 
-### To run tests
+#### To run tests
 
 The `pytest` framework is used for unit testing.
 
 To run tests:     
-`pytest`
+```bash
+pytest
+```
 
 To run test coverage:     
-`pytest --cov=lib`
+```bash
+pytest --cov=lib
+```
 
-### To run linter
+#### To run linter
 
-We are using a linter called `pylint` for this project.
+```bash
+pylint [options] module_or_package
+```
+For example:
+```bash
+pylint lib
+```
 
-To run the linter:    
+## Project description
 
-`pylint [options] module_or_package`     
-For example `pylint lib`
-
-## Project aims
-
-Our program aims to receive a user's drawing of a:
+Our project is pictionary played against a model trained to recognise three drawings:
 - crown
 - camera
 - rabbit
 
-and our AI machine will return a prediction of the drawing.
+A user draws on a canvas against a timer. The model then predicts which of the above the user has drawn and the prediction is displayed to the user.
+
+<img width="750" alt="Screenshot 2019-05-23 at 20 19 56" src="https://user-images.githubusercontent.com/45539085/58560022-2bf9d800-821c-11e9-94a7-326033112b24.png">
 
 ## Technologies
 
-- Python
+**Backend**
+- Python3
+- Flask
+
+**Testing**
 - Pytest
 - Splinter
-- Flask
-- SKLearn library
-- Keras API
+
+**Machine learning libraries and data**
+- Scikit-learn
+- Keras
 - TensorFlow
 - Google QuickDraw Dataset
+
+**Frontend**
 - JavaScript
 - jQuery
 - Fabric JS
+
+**Deployment**
 - Travis CI
 - Heroku
 
 ## Manifesto
 
-Our project [manifesto](https://github.com/amyj0rdan/ajak-final-project/blob/master/manifesto.md).
+Our project [manifesto](https://github.com/amyj0rdan/ajak-final-project/blob/master/manifesto.md) has individual and team project goals, and our ways of working.
 
 Our [Trello board](https://trello.com/b/SAOvMM1v/ajak).
 
